@@ -1,0 +1,136 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.top-bg {
+    height: 40px;
+    opacity: 0.98;
+    background-color: #212121;
+}
+.bg-top {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}
+
+.bg-category {
+    background-image: url('../img/bg_categories.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cfb-btn-send {
+    background-color: $bg-messenger;
+    color: $white;
+    text-transform: uppercase !important;
+    text-align: center;
+    padding: 10px 25px;
+    border: none;
+    opacity: 1;
+
+    &:hover, &:focus {
+        opacity: .8;
+    }
+}
+
+.cfg-list-1 {
+    .post-item {
+        margin-bottom: 30px;
+        .post-item__wrapper {
+            display: flex;
+            align-items: center;
+            align-content: center;
+
+            .post-item__img {
+                width: 35%;
+            }
+            .post-item__content {
+                width: 65%;
+                padding-left: 15px;
+            }
+
+            .title {
+                color: $black;
+                font-weight: 600;
+                font-size: 16px;
+            }
+
+            .desc {
+                position: relative;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .btn-readmore {
+                border: none;
+                color: $main-menu-color;
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.cfb-form {
+    .form-control {
+        border-radius: 1px !important;
+    }
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.pb-50 {
+    padding-bottom: 50px !important;
+}
+
+.frm_search_mobile {
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    .form-group {
+        margin-bottom: 0;
+        border-bottom: solid 2px $white;
+    }
+
+    input, button {
+        text-align: left;
+        background: transparent;
+        border: 0;
+        outline: none;
+        color: $white;
+    }
+
+    input {
+        width: 90%;
+        padding: 10px 20px 10px 10px;
+        color: $white;
+    }
+
+    button {
+        color: $white;
+    }
+}
+
+@media only screen and (min-width: $standard-screen) {
+    .cfb-form {
+        &.control-large {
+            input.form-control {
+                height: 40px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile-screen) {
+    .bg-top {
+        background-image: url('../img/bg_top_mobile-1.png')
+    }
+    .bg-category {
+        background-image: url('../img/bg_categories_mobile.png');
+    }
+}

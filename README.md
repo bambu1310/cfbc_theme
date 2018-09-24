@@ -1,1 +1,2 @@
-# cfbc_theme
+# cafe-bitcoin
+only html

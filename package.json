@@ -1,0 +1,35 @@
+{
+  "name": "cafe_bitcoin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-roboto": "0.0.2",
+    "roboto-fontface": "^0.10.0"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "del": "^3.0.0",
+    "font-awesome": "^4.7.0",
+    "font-awesome-scss": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-wait": "0.0.2",
+    "gulp-watch": "^5.0.1",
+    "jquery": "^3.3.1",
+    "jquery-slideshow": "^1.0.5"
+  }
+}
