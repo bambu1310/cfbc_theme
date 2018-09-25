@@ -82,11 +82,11 @@ $(document).ready(function() {
 var subSocial = $('#sub_socials');
 
 $(window).scroll(function() {
-    var backgroundHeight = $('#sliders').outerHeight();
+    var backgroundHeight = 100;//$('#sliders').outerHeight();
 
-    if (typeof backgroundHeight === 'undefined') {
-        backgroundHeight = 200;
-    }
+    /*if (typeof backgroundHeight === 'undefined') {
+        backgroundHeight = 100;
+    }*/
 
     var contentHeight = offset.top;
     var scrollHeight = $(this).scrollTop();
@@ -132,13 +132,13 @@ $(window).scroll(function() {
 		( windowTop > offsetOpacity ) && addClass(backTop, 'cd-top--fade-out');
 		scrolling = false;
 	}
-	
+
 	function scrollTop(duration) {
 	    var start = window.scrollY || document.documentElement.scrollTop,
 	        currentTime = null;
-	        
+
 	    var animateScroll = function(timestamp){
-	    	if (!currentTime) currentTime = timestamp;        
+	    	if (!currentTime) currentTime = timestamp;
 	        var progress = timestamp - currentTime;
 	        var val = Math.max(Math.easeInOutQuad(progress, start, -start, duration), 0);
 	        window.scrollTo(0, val);
@@ -170,7 +170,7 @@ $(window).scroll(function() {
 	}
 	function removeClass(el, className) {
 		var classList = className.split(' ');
-	  	if (el.classList) el.classList.remove(classList[0]);	
+	  	if (el.classList) el.classList.remove(classList[0]);
 	  	else if(hasClass(el, classList[0])) {
 	  		var reg = new RegExp('(\\s|^)' + classList[0] + '(\\s|$)');
 	  		el.className=el.className.replace(reg, ' ');

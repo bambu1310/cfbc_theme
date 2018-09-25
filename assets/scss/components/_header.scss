@@ -3,6 +3,9 @@
     position: relative;
     height: $heightOfHeader;
     z-index: 1;
+    .mobile-logo {
+        display: none;
+    }
 
     &.is-fixed {
 		left: 0;
@@ -12,18 +15,27 @@
         z-index: 20;
         background-color: rgba(0,0,0,.85);
         height: $heightOfHeaderFixed;
+        border-bottom: 0;
+        padding: 10px 0;
 
-        .header__logo {
-            a {
-                height: $heightOfHeaderFixed;
-            }
+        .pc-logo {
+            display: none;
+        }
+        .mobile-logo {
+            display: block;
+            width: 40px;
         }
 
         .main-menu {
-            height: $heightOfHeaderFixed;
+            height: 50px;
             > li {
                 > a {
-                    line-height: $heightOfHeaderFixed;
+                    line-height: $lineHeightOfHeaderFixed;
+                }
+            }
+            > li.active, li:hover {
+                > a {
+                    border-bottom: 0;
                 }
             }
         }
@@ -41,14 +53,15 @@
     }
 
     .header__logo {
-        width: 20%;
+        line-height: 8;
+        position: absolute;
         a {
-            height: $heightOfHeader;
             display: block;
             position: relative;
+            width: 131px;
+            height: 100px;
             img {
-                display: block;
-                max-height: 100%;
+                max-width: 100%;
             }
         }
     }
@@ -158,11 +171,10 @@
 
     .carousel-inner {
         .item {
-            height: 850px;
-            padding-top: 100px;
+            height: 792px;
 
             .layer {
-                height: 191px;
+                height: 292px;
                 background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(44, 44, 44, 0.76) 65%, rgba(48, 48, 48, 0.82), #192841);
             }
 
@@ -227,7 +239,7 @@
     }
     .list-items {
         position: relative;
-        top: -210px;
+        top: -152px;
         height: 150px;
     }
 }
